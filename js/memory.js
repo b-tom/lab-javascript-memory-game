@@ -6,10 +6,8 @@ class MemoryGame {
     this.pairsCards = [];
     this.pairsClicked = 0;
     this.pairsGuessed = 0;
-    this.randomCardsDeck = [];
   }
   shuffleCards() {
-
     for(let i = 0; i < this.cards.length; i++){
       const j = Math.floor(Math.random() * this.cards.length);
       [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
